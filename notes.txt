@@ -1,0 +1,4 @@
+-- Create scipts (use double quotes)
+
+npm set-script prepare "husky install"
+npm pkg set scripts.prepare="husky install"
