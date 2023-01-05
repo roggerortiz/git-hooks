@@ -1,4 +1,10 @@
--- Create scipts (use double quotes)
+01. Create scipts (use double quotes)
+  - npm set-script prepare "husky install"
+  - npm pkg set scripts.prepare="husky install"
 
-npm set-script prepare "husky install"
-npm pkg set scripts.prepare="husky install"
+02. Add hook with husky
+  - npx husky add .husky/pre-commit "npx lint-staged"
+
+03. Config eslint
+  - npx eslint --init
+  - npm init @eslint/config
