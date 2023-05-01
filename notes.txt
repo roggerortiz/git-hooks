@@ -1,10 +1,21 @@
+01. List npm config
+  - npm config ls -l
+
+02. Config npm init
+  - npm config set init-author-name "Rogger Ortiz" -g
+  - npm config set init-author-email "rogger.ortiz.br@gmail.com" -g
+  - npm config set init-author-url "https://github.com/roggerortiz" -g
+  - npm config set init-version "0.0.1" -g
+  - npm config set init-license "MIT" -g
+
 01. Create scipts (use double quotes)
   - npm set-script prepare "husky install"
   - npm pkg set scripts.prepare="husky install"
 
 02. Add hook with husky
   - npx husky add .husky/pre-commit "npx lint-staged"
+  - npx husky add .husky/commit-msg "npx --no -- commitlint --edit ${1}"
+  - npx husky add .husky/pre-push "npm run test"
 
-03. Config eslint
-  - npx eslint --init
-  - npm init @eslint/config
+05. Install conventional changelog
+  - npm i -g conventional-changelog-cli

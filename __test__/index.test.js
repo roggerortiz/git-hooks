@@ -1,4 +1,4 @@
-const { add } = require("../index")
+const { add } = require("../src/index")
 
 describe('test index', () => {
   test('add', () => {
